@@ -1,0 +1,84 @@
+h1 {
+    text-align: center;
+  }
+  
+  .container {
+    background-color: rgb(255, 255, 255);
+    padding: 10px 0;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  
+  .marker {
+    width: 100%;
+    max-width: 200px;
+    height: 25px;
+    margin: 10px auto;
+  }
+  
+  .cap {
+    width: 25%;
+    height: 25px;
+  }
+  
+  .sleeve {
+    width: 55%;
+    height: 25px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-left: 10px double rgba(0, 0, 0, 0.75);
+  }
+  
+  .cap, .sleeve {
+    display: inline-block;
+  }
+  
+  .red {
+    background: linear-gradient(rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27));
+    box-shadow: 0 0 20px 0 rgba(83, 14, 14, 0.8);
+  }
+  
+  .green {
+    background: linear-gradient(#55680D, #71F53E, #116C31);
+    box-shadow: 0 0 20px 0 #3B7E20CC;
+  }
+  
+  .blue {
+    background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
+    box-shadow: 0 0 20px 0 blue;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .marker {
+      max-width: 150px;
+      height: 20px;
+    }
+  
+    .cap {
+      width: 20%;
+      height: 20px;
+    }
+  
+    .sleeve {
+      width: 50%;
+      height: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.5em;
+    }
+  
+    .marker {
+      max-width: 120px;
+      height: 15px;
+    }
+  
+    .cap, .sleeve {
+      width: auto;
+      display: block;
+      margin: 5px auto;
+    }
+  }
+  
